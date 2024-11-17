@@ -1,0 +1,189 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    background-color: #f4f4f4; /* Background color for the page */
+  }
+  
+  /* Admin Dashboard Container */
+  .dashboard-container {
+    max-width: 1200px;
+    margin: 4rem ; /* Center the content */
+    padding: 2rem;
+    background-color: white; /* White background for the form container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Heading for Dashboard */
+  h1 {
+    text-align: center;
+    color: #1e3a8a; /* Blue color for the heading */
+    margin-bottom: 2rem;
+  }
+  
+  /* Header: Admin Info and Log Out Button */
+  .dashboard-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .dashboard-header p {
+    font-size: 1rem;
+    color: #333;
+    margin-right: 1rem;
+  }
+  
+  .dashboard-header button {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  button[type="logout"] {
+    width: 10%;
+    background-color: #703aee;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  
+  .dashboard-header button:hover {
+    background-color: #ff66b2; /* Pink hover effect */
+  }
+  
+  /* Product Upload Form */
+  .form-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"],
+  input[type="file"] {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  input[type="file"] {
+    padding: 0.5rem;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    background-color: #1e3a8a;
+    padding: 1rem;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #ff66b2;
+  }
+  /* Products List */
+.products-list {
+    display: flex;
+    flex-wrap: nowrap;  /* Prevent wrapping, making it horizontal */
+    overflow-x: auto;  /* Add horizontal scrolling if the items overflow */
+    gap: 1.5rem;
+    padding-bottom: 1rem;  /* Add space for scrollbar */
+    margin-top: 2rem;
+  }
+  
+ 
+  /* Product Card Styling */
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: 250px;  /* Set a fixed width for each card */
+    flex-shrink: 0; /* Prevent flex items from shrinking */
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px); /* Slight hover effect */
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #f1f1f1;
+  }
+  
+  .product-card h3 {
+    font-size: 1.25rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .product-card p {
+    color: #555;
+    padding: 0 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .product-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-top: 1px solid #f1f1f1;
+  }
+  
+  .product-price span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1e3a8a;
+  }
+  
+  button.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  button.delete-btn:hover {
+    background-color: #ff3333;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .products-list {
+      flex-wrap: wrap; /* Allow wrapping on small screens */
+    }
+  
+    .product-card {
+      width: 100%; /* Full width for small screens */
+    }
+  }
+  

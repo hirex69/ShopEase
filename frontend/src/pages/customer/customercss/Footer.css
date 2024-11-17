@@ -1,0 +1,13 @@
+/* src/components/Footer.css */
+
+/* Style for the footer */
+.footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    text-align: center; /* Center the text */
+    padding: 1rem; /* Padding inside the footer */
+    position: fixed; /* Fix footer at the bottom */
+    width: 100%; /* Make footer span the full width */
+    bottom: 0; /* Align at the bottom of the page */
+  }
+  

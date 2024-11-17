@@ -1,0 +1,32 @@
+/* src/components/Slideshow.css */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .slideshow-image {
+    width: 100%;
+    height: 50%;
+    object-fit: cover; /* Ensures the images cover the container without distortion */
+    transition: opacity 1s ease-in-out;
+  }
+  @media (max-width: 768px) {
+    .slideshow-container {
+        height: 50vh; /* Smaller height for tablets and mobile devices */
+    }
+
+    .slideshow-image {
+        object-position: center center; /* Center the image within the container */
+    }
+}
+
+@media (max-width: 480px) {
+    .slideshow-container {
+        height: 40vh; /* Further reduce height for smaller mobile screens */
+    }
+
+    .slideshow-image {
+        object-position: center center; /* Keep the images centered */
+    }
+}

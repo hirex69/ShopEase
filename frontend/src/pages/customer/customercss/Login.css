@@ -1,0 +1,119 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    background-color: #f4f4f4; /* Background color for the page */
+  }
+  
+  /* Main container for Login/Register */
+  .login-container,
+  .register-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 6rem auto; /* Center the form in the page */
+    padding: 2rem;
+    background-color: white; /* White background for the form container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #1e3a8a; /* Blue color for the heading */
+  }
+  
+  /* Error message styling */
+  .error {
+    color: red;
+    font-size: 0.875rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  /* Form group styling */
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  /* Label styling */
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333; /* Dark text for labels */
+    font-weight: bold;
+  }
+  
+  /* Input field styling */
+  input[type="email"],
+  input[type="password"],
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Rounded input fields */
+    font-size: 1rem;
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="text"]:focus,
+  select:focus {
+    border-color: #1e3a8a; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+  }
+  
+  /* Button Styling */
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #1e3a8a; /* Blue background for buttons */
+    color: rgb(19, 8, 8); /* White text color */
+    border: #333;
+    border-radius: 7%;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #f0eded; /* Light grey when button is disabled */
+  }
+  
+  /* Hover effect for the button */
+  button:hover:not(:disabled) {
+    background-color: #ff66b2; /* Pink hover effect */
+  }
+  
+  /* Link Styling */
+  .login-link,
+  .signup-link {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  a {
+    color: #1e3a8a; /* Blue text color for links */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline link on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 500px) {
+    .login-container,
+    .register-container {
+      width: 90%; /* Full width on small screens */
+      margin: 1rem auto;
+    }
+  }
+  

@@ -1,0 +1,67 @@
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif; /* Optional: Set a default font */
+  background-color: #f4f4f4; /* Optional: Set a background color */
+}
+
+/* Header container style */
+.header {
+  background-color: #1e3a8a; /* Blue background for the header (dark blue) */
+  color: white; /* White text color */
+   /* Padding inside the header */
+  display: flex; /* Flexbox for positioning items */
+  justify-content: space-between; /* Space between logo and nav */
+  align-items: center; /* Vertically center align items */
+  position: fixed; /* Fix the header at the top */
+  top: 0; /* Stick to the top of the page */
+  left: 0; /* Align with the left edge */
+  width: 100%; /* Ensure it spans the full width of the page */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+/* Logo styling */
+.header .logo h1 {
+  margin: 0; /* Remove any default margin */
+  
+  font-size: 1.5rem; /* Adjust the font size of the logo */
+  color: #ff66b2; /* Pink color for the logo text */
+}
+.h1 {
+  margin-top: 3rem;
+}
+/* Navigation bar styling */
+.header nav ul {
+  list-style-type: none; /* Remove default list styling */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flexbox for horizontal list items */
+}
+
+/* List item styling */
+.header nav ul li {
+  margin: 0 1rem; /* Spacing between nav links */
+}
+
+/* Link styling */
+.header nav ul li a {
+  color: white; /* White text color for the links */
+  text-decoration: none; /* Remove underlines from links */
+  font-size: 1rem; /* Font size for nav links */
+}
+
+.header nav ul li a:hover {
+  color: #ffffff; /* Pink color on hover for nav links */
+  text-decoration: underline; /* Underline on hover for interaction */
+}
+
+/* Add padding to the content below the fixed header to prevent overlap */
+.main-content {
+  padding-top: 5rem; /* Adjust based on the height of your header */
+}
