@@ -18,11 +18,13 @@ app.use(express.json());
 
 
 app.use(cors({
-  origin: 'http://localhost:5173', // your front-end URL
+  origin: [
+    'http://localhost:5173',           // Allow local development
+    'https://exquisite-chebakia-755866.netlify.app',  // Allow your Netlify front-end
+  ],
   methods: ['GET', 'POST', 'DELETE', 'PUT'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
-
 
 
 // Connect to MongoDB
