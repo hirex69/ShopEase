@@ -18,10 +18,9 @@ app.use(express.json());
 
 
 app.use(cors({
-  origin: [
-    'http://localhost:5173',           // Allow local development
-    'https://exquisite-chebakia-755866.netlify.app',  // Allow your Netlify front-end
-  ],
+
+    origin: '*',  // Allow all origins
+
   methods: ['GET', 'POST', 'DELETE', 'PUT'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
