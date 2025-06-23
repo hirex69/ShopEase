@@ -18,11 +18,12 @@ app.use(express.json());
 
 
 app.use(cors({
-  origin: '*', // your front-end URL
+
+    origin: '*',  // Allow all origins
+
   methods: ['GET', 'POST', 'DELETE', 'PUT'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
-
 
 
 // Connect to MongoDB

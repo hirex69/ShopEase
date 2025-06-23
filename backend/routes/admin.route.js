@@ -1,6 +1,6 @@
 const express = require('express');
 const { protect, isAdmin } = require('../middleware/auth.middleware');  // Authentication middleware
-const upload = require('../multerConfig');  // File upload configuration
+const upload = require('../multerconfig');  // File upload configuration
 const Product = require('../models/product');  // Product model for MongoDB
 const router = express.Router();
 
