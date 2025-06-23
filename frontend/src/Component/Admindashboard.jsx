@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './CSS/AdminDashboard.css'; // Importing the CSS
+import './CSS/Admindashboard.css'; // Importing the CSS
 import Login from '../pages/customer/Login';
 import { useAuth } from '../context/Authcontext';  // Import useAuth
 
